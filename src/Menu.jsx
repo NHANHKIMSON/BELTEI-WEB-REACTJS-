@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Menu(props) {
     return (
@@ -8,16 +9,16 @@ function Menu(props) {
         <div className="flex items-center">
             <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
                 <li>
-                    <a href="/" className="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
+                    <Link to="/" className="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</LIN>
                 </li>
                 <li>
-                    <a href="/university" className="text-gray-900 dark:text-white hover:underline">University</a>
+                    <Link to="/university" className="text-gray-900 dark:text-white hover:underline">University</Link>
                 </li>
                 <li>
-                    <a href="/academics" className="text-gray-900 dark:text-white hover:underline">Academics</a>
+                    <Link to="/academics" className="text-gray-900 dark:text-white hover:underline">Academics</Link>
                 </li>
                 <li>
-                    <a href="/features" className="text-gray-900 dark:text-white hover:underline">Features</a>
+                    <Link to="/features" className="text-gray-900 dark:text-white hover:underline">Features</Link>
                 </li>
             </ul>
         </div>

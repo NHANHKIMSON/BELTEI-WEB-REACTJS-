@@ -19,10 +19,10 @@ function AppContent() {
       {!isLoginPage && <Menu />}
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/university" element={<University />} />
-        <Route path="/academics" element={<Academics />} />
-        <Route path="/features" element={<Features />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="university" element={<University />} />
+        <Route path="academics" element={<Academics />} />
+        <Route path="features" element={<Features />} />
+        <Route path="login" element={<Login />} />
       </Routes>
       {!isLoginPage && <Footer />}
     </>
